@@ -17,6 +17,7 @@ chip_t BlackJackSolver::get_bet() { return 0; }
 BlackJackAction
     BlackJackSolver::handle_hand(Card dealer_up_card, std::span<const Card> cards, BlackJackHandStatus status)
 {
+    if(dealer_up_card.rank >= 5 && cards)
     return BlackJackAction::STAND;
 }
 
