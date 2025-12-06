@@ -19,7 +19,7 @@ public:
 
 public:
 
-    int handValue(std::span<const Card> cards);
+    
 
     chip_t get_bet();
 
@@ -29,3 +29,5 @@ public:
 
     BlackJackAction handle_hand(Card dealer_up_card, std::span<const Card> cards, BlackJackHandStatus status);
 };
+
+int handValue(std::span<const Card> cards);
