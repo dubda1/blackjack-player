@@ -18,6 +18,9 @@ public:
     ~BlackJackSolver();
 
 public:
+
+    int handValue(std::span<const Card> cards);
+
     chip_t get_bet();
 
     void take_payout(chip_t chips, std::span<const Card> dealer_cards);
